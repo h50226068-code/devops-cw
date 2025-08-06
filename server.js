@@ -1,0 +1,9 @@
+const http = require('http');
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.end("Hello from DevOps | v=1\n");
+});
+server.listen(8081, () => {
+  console.log("Test Jenkins build trigger");
+  console.log("Server running on port 8081");
+});
